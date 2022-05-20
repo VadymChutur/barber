@@ -4,6 +4,7 @@
   --main-text-color: #555555;
   --second-text-color: #9da4bd;
   --third-text-color: #303030;
+  --four-text-color: rgba(157, 164, 189, 0.6);
   --accent-color: #ff6c00;
   --main-btn-color: #ffffff;
   --second-btn-color: #303030;
@@ -14,6 +15,29 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
 }
 
 .list {
@@ -97,12 +121,7 @@ body {
 }
 
 .hero-top-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--four-text-color);
 }
 
 .hero-title {
@@ -114,10 +133,6 @@ body {
 }
 
 .hero-bottom-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(30 / 18);
-  letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
 
@@ -132,25 +147,12 @@ body {
 .about-item {
 }
 .about-top-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 .about-title {
-  font-family: "Raleway";
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
-  color: var(--second-title-color);
 }
+
 .about-bottom-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(30 / 18);
-  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 .about-text {
@@ -163,5 +165,190 @@ body {
 .about-btn {
   color: var(--second-btn-color);
 }
+
 .btn {
+}
+
+/* --------------------------services----------------------------------- */
+
+.sevices {
+  background-color: #555555;
+}
+
+.services-top-text {
+  color: var(--four-text-color);
+}
+
+.services-title {
+  color: var(--main-title-color);
+}
+
+.services-list {
+}
+
+.services-item {
+}
+
+.services-item-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.services-btn {
+  color: var(--main-btn-color);
+}
+
+.btn {
+}
+
+/* --------------------------benefits----------------------------------- */
+
+.benefits {
+}
+
+.benefits-list {
+}
+
+.benefits-item {
+  background-color: #f7f7f7;
+}
+
+.benefits-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: var(--third-text-color);
+}
+
+.benefits-top-text {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+
+.benefits-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+
+.benefits-bottom-text {
+  color: var(--main-text-color);
+}
+
+.bottom-text {
+}
+
+/* --------------------------masters----------------------------------- */
+
+.masters {
+  background-color: #f7f7f7;
+}
+
+.masters-top-text {
+  color: var(--third-text-color);
+}
+
+.masters-title {
+  color: var(--second-title-color);
+}
+
+.masters-list {
+}
+
+.list {
+}
+
+.masters-item {
+}
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+
+.masters-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+/* --------------------------galery----------------------------------- */
+
+.galery {
+}
+
+.galery-top-text {
+  color: var(--third-text-color);
+}
+
+.galery-list {
+}
+
+.galery-item {
+}
+
+/* --------------------------footer----------------------------------- */
+
+.footer {
+  background-color: #555555;
+}
+
+.footer-title {
+  color: var(--main-title-color);
+}
+
+.contacts {
+  background-color: #555555;
+}
+
+.contacts-title {
+  color: var(--main-title-color);
+}
+
+.contacts-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.contacts-item {
+}
+
+.contacts-text-main {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.contacts-text-secondary {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
