@@ -47,7 +47,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .title {
@@ -140,8 +140,8 @@ img {
   color: var(--main-title-color);
 }
 
-.header-item {
-}
+/* .header-item {
+} */
 
 .header-item:not(:last-child) {
   margin-right: 40px;
@@ -222,8 +222,8 @@ img {
 
 /* --------------------------about----------------------------------- */
 
-.about {
-}
+/* .about {
+} */
 
 .about > .container {
   display: flex;
@@ -233,8 +233,10 @@ img {
   display: flex;
   margin-right: 64px;
 }
-.list {
-}
+
+/* .list {
+} */
+
 .about-item + .about-item {
   margin-left: 30px;
 }
@@ -316,8 +318,8 @@ img {
   color: var(--main-btn-color);
 }
 
-.btn {
-}
+/* .btn {
+} */
 
 /* --------------------------benefits----------------------------------- */
 
@@ -388,8 +390,8 @@ img {
   color: var(--main-text-color);
 }
 
-.bottom-text {
-}
+/* .bottom-text {
+} */
 
 /* --------------------------masters----------------------------------- */
 
@@ -417,8 +419,8 @@ img {
   display: flex;
 }
 
-.list {
-}
+/* .list {
+} */
 
 .masters-item {
   flex-basis: calc(100 / 3 - var(--third-margin));
@@ -474,23 +476,30 @@ img {
 }
 
 .contacts > .container {
+  display: flex;
   padding-top: 130px;
   padding-bottom: 60px;
 }
 
+.container-address {
+  margin-left: auto;
+  margin-right: 135px;
+}
+
 .footer-title {
+  margin-bottom: 232px;
   color: var(--main-title-color);
 }
 
 .footer-btn {
-  font-family: inherit
-font-weight: 600;
-font-size: 12px;
-line-height: calc(16/12);
-text-align: center;
-letter-spacing: 0.09em;
-text-transform: uppercase;
-color: var(--main-btn-color);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-btn-color);
 }
 
 .contacts {
@@ -498,6 +507,8 @@ color: var(--main-btn-color);
 }
 
 .contacts-title {
+  margin-bottom: 40px;
+
   color: var(--main-title-color);
 }
 
@@ -510,15 +521,19 @@ color: var(--main-btn-color);
 }
 
 .contacts-item {
+  margin-bottom: 20px;
 }
 
 .contacts-text-main {
+  margin-top: 70px;
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
+  text-align: center;
   color: #ffffff;
 }
 
@@ -531,4 +546,25 @@ color: var(--main-btn-color);
 }
 .footer-link {
   color: #9da4bd;
+}
+
+.footer-link > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 57px;
+  padding-bottom: 55px;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-item + .social-item {
+  margin-left: 40px;
+}
+
+.social-item:hover,
+.social-item:focus {
+  color: var(--accent-color);
 }
