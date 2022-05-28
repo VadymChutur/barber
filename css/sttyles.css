@@ -473,8 +473,24 @@ img {
   background-color: #555555;
 }
 
+.contacts > .container {
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+
 .footer-title {
   color: var(--main-title-color);
+}
+
+.footer-btn {
+  font-family: inherit
+font-weight: 600;
+font-size: 12px;
+line-height: calc(16/12);
+text-align: center;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: var(--main-btn-color);
 }
 
 .contacts {
@@ -514,5 +530,5 @@ img {
   color: #9da4bd;
 }
 .footer-link {
-  color: red;
+  color: #9da4bd;
 }
