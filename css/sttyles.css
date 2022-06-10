@@ -14,6 +14,7 @@
   --typical-margin: 20px;
   --secondary-margin: 44px;
   --third-margin: 30px;
+  --cubik-bezier: 0.14, 0.8, 0.95, 0.37;
 }
 
 h1,
@@ -98,6 +99,9 @@ body {
   background-color: transparent;
   border: 1px solid var(--third-btn-color);
   border-radius: 25px;
+
+  transition: color 250ms cubic-bezier(var(--cubik-bezier)),
+    background-color 250ms cubic-bezier(var(--cubik-bezier));
 }
 
 .btn:hover,
@@ -126,10 +130,11 @@ img {
 /* --------------------------header----------------------------------- */
 
 .header {
+  position: absolute;
+  width: 100%;
+
   padding-top: 32px;
   padding-bottom: 32px;
-
-  background-color: #555555;
 }
 
 .header > .container {
@@ -177,6 +182,8 @@ img {
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   color: var(--main-btn-color);
+
+  transition: color 250ms cubic-bezier(0.14, 0.8, 0.95, 0.37);
 }
 
 .header-link:hover,
@@ -187,6 +194,7 @@ img {
 }
 
 .header-btn {
+  margin-right: 5px;
   margin-left: 40px;
   color: var(--main-btn-color);
 }
@@ -211,13 +219,40 @@ img {
   background-clip: padding-box;
 }
 
-.hero-list {
+.container-hero-list {
+  display: flex;
+  align-items: flex-end;
   width: 90px;
+}
+
+.hero-list {
+  transform: rotate(-90deg) translate(-19px);
+  transform-origin: top left;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.hero-link {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: var(--second-title-color);
+
+  transition: color 250ms cubic-bezier(0.14, 0.8, 0.95, 0.37);
+}
+
+.hero-list::before {
+  content: "";
+  height: 1px;
+  width: 63px;
+  background-color: currentColor;
+  margin-right: var(--typical-margin);
+}
+
+.hero-item + .hero-item {
+  margin-left: 40px;
 }
 
 .hero-link:hover,
@@ -266,10 +301,12 @@ img {
 .about-item + .about-item {
   margin-left: 30px;
 }
+
 .about-top-text {
   margin-bottom: var(--typical-margin);
   color: var(--third-text-color);
 }
+
 .about-title {
   margin-bottom: var(--typical-margin);
 }
@@ -536,6 +573,8 @@ img {
   border-radius: 50%;
   background: #ffffff;
   fill: var(--second-title-color);
+
+  transition: fill 250ms cubic-bezier(0.14, 0.8, 0.95, 0.37);
 }
 
 .masters-link-soc:hover,
@@ -679,6 +718,17 @@ img {
 
 .social-list {
   display: flex;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.14, 0.8, 0.95, 0.37);
+}
+
+.social-list::before {
+  content: "";
+  height: 1px;
+  width: 63px;
+  margin-right: var(--typical-margin);
+  background-color: currentColor;
 }
 
 .social-item + .social-item {
