@@ -14,7 +14,7 @@
   --typical-margin: 20px;
   --secondary-margin: 44px;
   --third-margin: 30px;
-  --cubik-bezier: 0.14, 0.8, 0.95, 0.37;
+  --cubic-bezier: 0.4, 0, 0.2, 1;
 }
 
 h1,
@@ -738,4 +738,73 @@ img {
 .social-item:hover,
 .social-item:focus {
   color: var(--accent-color);
+}
+
+.backdrope.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(90deg);
+}
+
+.backdrope {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  background-color: var(--four-text-color);
+
+  transition: opacity 300ms cubic-bezier(var(--cubic-bezier)),
+    visibility 300ms cubic-bezier(var(--cubic-bezier));
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 500px;
+  min-height: 700px;
+  background-color: var(--main-bacground-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: opacity 300ms cubic-bezier(var(--cubic-bezier)),
+    transform 300ms cubic-bezier(var(--cubic-bezier));
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  border: 1px solid var(--main-text-color);
+  color: var(--main-text-color);
+  background-color: transparent;
+  fill: currentColor;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
